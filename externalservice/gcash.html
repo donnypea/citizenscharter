@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCash Payment Modal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+   
+    background: #d6d3ff;
+    width: 100%;
+    height: 100%  ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* Modal Background */
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 40 0px;
+    width: 90%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    position: relative;
+  }
+
+  /* Images */
+  .modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+  }
+
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: red;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  /* Footer Buttons */
+  .footer-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  }
+</style>
+</head>
+<body>
+
+<!-- Modal -->
+<div class="modal" id="gcashModal">
+  <div class="modal-content">
+    <button class="close-btn" onclick="closeModal()">Back</button>
+
+    <img src="../images/paygcash.jpeg" alt="Payment Image">
+   
+
+    <h2>Pay with GCash</h2>
+    
+
+    <div class="footer-btn">
+      <a href="/index.php" class="btn"><i class="fas fa-home"></i> Home</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function closeModal() {
+  document.getElementById("gcashModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>

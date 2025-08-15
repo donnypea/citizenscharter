@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community Tax Certificate - Corporate</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #3a0ca3, #7209b7, #4361ee);
+        background-size: 300% 300%;
+        animation: gradientMove 10s ease infinite;
+        min-height: 100vh;
+        padding: 40px 20px;
+        color: white;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: 1rem;
+        opacity: 0.9;
+    }
+
+    .content {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .glass-card {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 16px;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .info-item strong {
+        display: block;
+        color: #ffd60a;
+        margin-bottom: 5px;
+        font-size: 0.95rem;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        color: white;
+    }
+
+    th, td {
+        padding: 12px;
+        border: 1px solid rgba(255,255,255,0.15);
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    th {
+        background: rgba(255, 255, 255, 0.15);
+        color: #ffd60a;
+        text-transform: uppercase;
+    }
+
+    tbody tr:hover {
+        background: rgba(255,255,255,0.08);
+        transform: scale(1.01);
+    }
+
+    .home-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn-home {
+        display: inline-block;
+        padding: 12px 25px;
+        background: linear-gradient(90deg, #ffd60a, #ffc300);
+        color: #000;
+        border: none;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(255, 214, 10, 0.4);
+        text-decoration: none;
+    }
+
+    .btn-home:hover {
+        background: linear-gradient(90deg, #ffc300, #ffb703);
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 6px 20px rgba(255, 214, 10, 0.6);
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    @media (max-width: 768px) {
+        .info-grid {
+            grid-template-columns: 1fr;
+        }
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+        tr {
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        td {
+            padding-left: 50%;
+            position: relative;
+            background: rgba(255,255,255,0.05);
+        }
+        td::before {
+            content: attr(data-label);
+            position: absolute;
+            left: 15px;
+            top: 8px;
+            font-weight: bold;
+            color: #ffd60a;
+        }
+        th {
+            display: none;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Issuance of Community Tax Certificate - Corporate</h1>
+    <p>The Community Tax Certificate (CTC) or a Cedula is a document issued by the Philippine government to individuals and corporations upon payment of the community tax.</p>
+</header>
+
+<div class="content">
+    <div class="glass-card info-grid">
+        <div class="info-item"><strong>Office or Division:</strong> Business Taxes & Fees Division</div>
+        <div class="info-item"><strong>Classification:</strong> Simple</div>
+        <div class="info-item"><strong>Type of Transaction:</strong> Government to Business</div>
+        <div class="info-item"><strong>Who may avail:</strong> All Corporate Business Establishments in Mandaue City</div>
+    </div>
+
+    <div class="glass-card">
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Client Steps</th>
+                    <th>Agency Actions</th>
+                    <th>Fees to be Paid</th>
+                    <th>Processing Time</th>
+                    <th>Person Responsible</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="No.">1</td>
+                    <td data-label="Client Steps">Submit the Tax Order of Payment to Counter 9</td>
+                    <td data-label="Agency Actions">Encode the details of the client and compute the amount to be paid</td>
+                    <td data-label="Fees to be Paid">None</td>
+                    <td data-label="Processing Time">3 minutes</td>
+                    <td data-label="Person Responsible">Revenue Collectors</td>
+                </tr>
+                <tr>
+                    <td data-label="No.">2</td>
+                    <td data-label="Client Steps">Pay the required amount</td>
+                    <td data-label="Agency Actions">Issue the Community Tax Certificate</td>
+                    <td data-label="Fees to be Paid">Annual basic community tax of PHP 500 plus PHP 2 for every PHP 1,000 of gross receipts, up to PHP 10,000</td>
+                    <td data-label="Processing Time">5 minutes</td>
+                    <td data-label="Person Responsible">Revenue Collectors</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="home-container">
+        <a href="../index.php" class="btn-home">🏠 Home</a>
+    </div>
+</div>
+
+</body>
+</html>

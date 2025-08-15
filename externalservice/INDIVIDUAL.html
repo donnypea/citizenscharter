@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community Tax Certificate - Individual</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        margin: 0;
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 1000px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        backdrop-filter: blur(10px);
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1.8em;
+    }
+
+    p {
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background: rgba(255,255,255,0.15);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    table th, table td {
+        padding: 12px;
+        text-align: center;
+    }
+
+    table th {
+        background: rgba(255,255,255,0.2);
+    }
+
+    tr:nth-child(even) {
+        background: rgba(255,255,255,0.05);
+    }
+
+    .btn {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+        background: #ffcd38;
+        color: #000;
+        padding: 12px 25px;
+        width: 50px;
+        border-radius: 30px;
+        left: 450px;
+        font-weight: bold;
+        position: relative;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #ffc107;
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media screen and (max-width: 768px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+            text-align: left;
+        }
+
+        tr {margin-bottom: 15px;}
+        td {
+            padding-left: 50%;
+            position: relative;
+        }
+        td:before {
+            position: absolute;
+            left: 10px;
+            width: 45%;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Issuance of Community Tax Certificate – Individual</h1>
+    <p>The Community Tax Certificate (CTC) or Cedula is issued by the Philippine government to individuals and corporations upon payment of the community tax. It is also used in various government transactions.</p>
+
+    <table>
+        <tr>
+            <th>Office or Division</th>
+            <td>Business Taxes & Fees Division</td>
+        </tr>
+        <tr>
+            <th>Classification</th>
+            <td>Simple</td>
+        </tr>
+        <tr>
+            <th>Type of Transaction</th>
+            <td>Government to Citizen, Government to Business, Government to Government</td>
+        </tr>
+        <tr>
+            <th>Who may avail</th>
+            <td>All Filipino Citizens</td>
+        </tr>
+    </table>
+
+    <h2 style="margin-top:30px;">Checklist of Requirements</h2>
+    <table>
+        <tr>
+            <th>Requirement</th>
+            <th>Where to Secure</th>
+        </tr>
+        <tr>
+            <td>Filled-out application form</td>
+            <td>City Treasurer’s Office – Business Taxes & Fees Division Lobby</td>
+        </tr>
+    </table>
+
+    <h2 style="margin-top:30px;">How to Avail of the Service</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Client Steps</th>
+                <th>Agency Actions</th>
+                <th>Fees to be Paid</th>
+                <th>Processing Time</th>
+                <th>Person Responsible</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Submit the filled-out form</td>
+                <td>Encode details, compute amount</td>
+                <td>None</td>
+                <td>3 minutes</td>
+                <td>Revenue Collectors</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pay required amount</td>
+                <td>Issue Community Tax Certificate</td>
+                <td>Annual basic community tax of PHP 5 plus PHP 1 for every PHP 1,000 of income, plus additional tax for property</td>
+                <td>2 minutes</td>
+                <td>Revenue Collectors</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="../index.php" class="btn"><i class="fas fa-home"></i> Home</a>
+</div>
+
+<script>
+    // Simple animation on scroll
+    document.addEventListener("scroll", () => {
+        document.querySelectorAll(".container").forEach(el => {
+            let rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                el.style.opacity = "1";
+                el.style.transform = "translateY(0)";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

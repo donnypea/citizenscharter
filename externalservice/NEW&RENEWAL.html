@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Receipt of Payment of Business Taxes</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    :root {
+        --primary: #4e54c8;
+        --secondary: #8f94fb;
+        --accent: #ffcc00;
+        --bg-light: #f4f6fb;
+        --text-dark: #2e2e2e;
+        --card-bg: #fff;
+    }
+
+    body {
+        font-family: "Segoe UI", Tahoma, sans-serif;
+        background: var(--bg-light);
+        margin: 0;
+        color: var(--text-dark);
+    }
+
+    header {
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        color: white;
+        padding: 25px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 30px auto;
+        background: var(--card-bg);
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: var(--primary);
+        font-weight: 600;
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 25px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: left;
+    }
+
+    th {
+        background: var(--accent);
+        font-weight: 600;
+        color: #333;
+    }
+
+    tr:nth-child(even) td {
+        background: #fafafa;
+    }
+
+    td {
+        border-bottom: 1px solid #eee;
+    }
+
+    .highlight-table {
+        border: 2px solid var(--accent);
+    }
+
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--primary);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        cursor: pointer;
+        border: none;
+    }
+
+    .btn:hover {
+        background: var(--secondary);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .footer-btn {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+        th, td {
+            font-size: 0.9rem;
+            padding: 10px;
+        }
+        header {
+            font-size: 1.4rem;
+            padding: 15px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <i class="fas fa-receipt"></i> Receipt of Payment of Business Taxes (New & Renewal)
+</header>
+
+<div class="container">
+    <p class="description">
+        <i class="fas fa-info-circle"></i> Business establishments are required to pay business taxes and other regulatory fees. 
+        Business permits must be renewed every year and penalties are imposed on business 
+        establishments that fail to renew during the prescribed period. Taxes may be paid in 
+        an annual or quarterly basis.
+    </p>
+
+    <table class="highlight-table">
+        <tr>
+            <th><i class="fas fa-building"></i> Office or Division</th>
+            <td>Business Taxes & Fees Division</td>
+        </tr>
+        <tr>
+            <th><i class="fas fa-list"></i> Classification</th>
+            <td>Simple</td>
+        </tr>
+        <tr>
+            <th><i class="fas fa-exchange-alt"></i> Type of Transaction</th>
+            <td>Government to Business</td>
+        </tr>
+        <tr>
+            <th><i class="fas fa-user-tie"></i> Who may avail</th>
+            <td>Owners of business establishments in Mandaue City</td>
+        </tr>
+    </table>
+
+    <h3><i class="fas fa-clipboard-check"></i> Checklist of Requirements</h3>
+    <table>
+        <tr>
+            <th>Requirement</th>
+            <th>Where to Secure</th>
+        </tr>
+        <tr>
+            <td>Community Tax Receipts of employees, of the Company and/or Corporation</td>
+            <td>City Treasurer’s Office – Business Taxes & Fees Division</td>
+        </tr>
+        <tr>
+            <td>Occupational Tax Receipt / Professional Tax Receipt</td>
+            <td>City Treasurer’s Office – Business Taxes & Fees Division</td>
+        </tr>
+        <tr>
+            <td>Tax Order of Payment (2 copies)</td>
+            <td>Business Permit Licensing Office (BPLO) or through Electronic Business Permit Licensing System (eBPLS)</td>
+        </tr>
+    </table>
+
+    <h3><i class="fas fa-tasks"></i> Steps</h3>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Client Steps</th>
+            <th>Agency Actions</th>
+            <th>Fees to be Paid</th>
+            <th>Processing Time</th>
+            <th>Person Responsible</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Submit the Tax Order of Payment form to any available counters</td>
+            <td>Receive the required document and check for completeness, verify the amount to be paid</td>
+            <td>Amount reflected in the Tax Order of Payment</td>
+            <td>5 minutes</td>
+            <td>Revenue Collectors</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Pay the required taxes, fees and charges</td>
+            <td>Receive the payment and issue the Official Receipt</td>
+            <td>Amount reflected in the Tax Order of Payment</td>
+            <td>5 minutes</td>
+            <td>Revenue Collectors</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align:right; font-weight:600;">Total</td>
+            <td>10 minutes</td>
+            <td></td>
+        </tr>
+    </table>
+   
+    <div class="footer-btn">
+        <a href="../index.php" class="btn"><i class="fas fa-home"></i> Home</a>
+    </div>
+</div>
+
+</body>
+</html>

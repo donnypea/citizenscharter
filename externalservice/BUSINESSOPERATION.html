@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retirement of Business Operation</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+        color: #000000;
+    }
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    p.description {
+        text-align: center;
+        font-size: 1rem;
+        max-width: 850px;
+        margin: 0 auto 30px;
+        line-height: 1.6;
+    }
+    /* Glassmorphism Card Style */
+    .info-table {
+        backdrop-filter: blur(10px);
+        background: rgba(255,255,255,0.15);
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .info-row {
+        display: flex;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    .info-row div {
+        background: linear-gradient(90deg,  #ffb400, #ffd700);
+        color: #000;
+        font-weight: bold;
+        flex: 1;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .info-row div:first-child {
+        background: linear-gradient(90deg, #ffd700, #ffb400);
+        color: #000;
+        font-weight: bold;
+    }
+    .info-row i {
+        margin-right: 10px;
+    }
+    h2 {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 1.5rem;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: rgba(255,255,255,0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+    }
+    thead {
+        background: linear-gradient(90deg, #ffd700, #ffb400);
+        color: #000;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+        font-size: 0.95rem;
+    }
+    tbody tr {
+        transition: 0.3s ease;
+    }
+    tbody tr:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: scale(1.02);
+    }
+    tbody tr:nth-child(even) {
+        background: rgba(255,255,255,0.05);
+    }
+    /* Number Circle */
+    .step-number {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #ffd700, #ffb400);
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        line-height: 32px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    .home-btn {
+        display: block;
+        width: max-content;
+        margin: 30px auto 0;
+        padding: 12px 25px;
+        background: #ffd700;
+        color: #000000;
+        font-weight: bold;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .home-btn i {
+        margin-right: 8px;
+    }
+    .home-btn:hover {
+        background: #ffd700;
+        color: #000;
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 768px) {
+        .info-row {
+            flex-direction: column;
+        }
+        th, td {
+            font-size: 0.85rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1><i class="fas fa-store-slash"></i> Retirement of Business Operation</h1>
+    <p class="description">
+        Enterprises that closed or ceased their business operation or line of business, or whose ownership has changed, must file an Application for Retirement of Business. This updates the City Government’s records and avoids the accumulation of tax payments and penalties.
+    </p>
+
+    <div class="info-table">
+        <div class="info-row">
+            <div> Office or Division:</div>
+            <div>Business Taxes & Fees Division</div>
+        </div>
+        <div class="info-row">
+            <div>Classification:</div>
+            <div>Simple</div>
+        </div>
+        <div class="info-row">
+            <div> Type of Transaction:</div>
+            <div>Government to Business</div>
+        </div>
+        <div class="info-row">
+            <div>Who may avail:</div>
+            <div>Owners of business establishments in Mandaue City</div>
+        </div>
+    </div>
+
+    <h2><i class="fas fa-list-check"></i> How to Avail of the Service</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Client Steps</th>
+                <th>Agency Actions</th>
+                <th>Fees to be Paid</th>
+                <th>Processing Time</th>
+                <th>Person Responsible</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="step-number">1</span></td>
+                <td>Fill up and submit application form or other requirements</td>
+                <td>Provide retirement form; Check completeness of requirements</td>
+                <td>None</td>
+                <td>5 minutes</td>
+                <td>Local Treasury Operation Officer</td>
+            </tr>
+            <tr>
+                <td><span class="step-number">2</span></td>
+                <td>Pay necessary taxes and/or other requirements</td>
+                <td>Inform client of payment details and receive payment</td>
+                <td>Assessed fees</td>
+                <td>2 minutes</td>
+                <td>Revenue Collection Officer</td>
+            </tr>
+            <tr>
+                <td><span class="step-number">3</span></td>
+                <td>Schedule for inspection</td>
+                <td>Verify the actual status of the business location</td>
+                <td>None</td>
+                <td>2 minutes</td>
+                <td>Local Treasury Office</td>
+            </tr>
+            <tr>
+                <td><span class="step-number">4</span></td>
+                <td>Claim approved Application for Retirement of Business</td>
+                <td>Sign and release the approved application</td>
+                <td>None</td>
+                <td>2 minutes</td>
+                <td>City Treasurer</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="../index.php" class="home-btn"><i class="fas fa-home"></i> Home</a>
+</div>
+
+<script>
+    // Optional animation logging
+    document.querySelector('.home-btn').addEventListener('click', function() {
+        console.log('Home button clicked');
+    });
+</script>
+
+</body>
+</html>
